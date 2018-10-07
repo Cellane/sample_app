@@ -58,8 +58,8 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
   gem 'rails-controller-testing', '~> 1.0'
-  gem 'minitest', '~> 5.11'
-  gem 'minitest-reporters', '~> 1.3'
+  gem 'minitest', '5.10.3'
+  gem 'minitest-reporters', '1.1.14'
   gem 'guard', '~> 2.14'
   gem 'guard-minitest', '~> 2.4'
 end

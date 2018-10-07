@@ -48,6 +48,9 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore Spring files.
+/spring/*.pid
+
 # Ignore node_modules
 node_modules/
 
