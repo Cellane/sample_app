@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'faker', '~> 1.9'
 gem 'will_paginate', '~> 3.1'
 gem 'bootstrap-will_paginate', '~> 1.0'
+gem 'carrierwave', '~> 1.2'
+gem 'mini_magick', '~> 4.9'
+gem 'fog', '~> 1.42'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

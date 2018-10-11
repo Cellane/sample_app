@@ -1,7 +1,7 @@
-# frozen_string_literal: true
-
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+
+  has_many :microposts, dependent: :destroy
 
   attr_accessor :remember_token, :activation_token, :reset_token
   before_create :create_activation_digest
@@ -60,6 +60,11 @@ class User < ApplicationRecord
   # Returns ture if a password reset has expired
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  # Defined a proto-feed
+  def feed
+    Micropost.where('user_id = ?', id)
   end
 
   # Returns the hash digest of the given string
