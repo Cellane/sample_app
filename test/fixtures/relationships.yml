@@ -1,0 +1,15 @@
+one:
+  follower: milan
+  followed: lana
+
+two:
+  follower: milan
+  followed: malory
+
+three:
+  follower: lana
+  followed: milan
+
+foud:
+  follower: archer
+  followed: milan
